@@ -4,7 +4,6 @@ import com.Sergio.enums.Category;
 import com.Sergio.model.Course;
 import com.Sergio.model.Lesson;
 import com.Sergio.repository.CourseRepository;
-
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
