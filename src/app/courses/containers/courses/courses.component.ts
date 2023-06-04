@@ -13,7 +13,7 @@ import { CoursesService } from '../../services/courses.service';
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
-  styleUrls: ['./courses.component.scss']
+  styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent implements OnInit {
 
