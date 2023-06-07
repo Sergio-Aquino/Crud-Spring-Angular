@@ -22,7 +22,7 @@ public class CrudSpringApplication {
 			courseRepository.deleteAll();
 
 			Course c = new Course();
-			c.setName("Angular com Spring");
+			c.setName("Angular and Spring");
 			c.setCategory(Category.BACK_END);
 
 			Lesson l = new Lesson();
