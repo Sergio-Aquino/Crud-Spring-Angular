@@ -1,20 +1,22 @@
+import { ConfirmationDialogComponent } from '../../../shared/components/confirmation-dialog/confirmation-dialog.component';
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/operators';
+
 import { ErrorDialogComponent } from '../../../shared/components/error-dialog/error-dialog.component';
-import { ConfirmationDialogComponent } from '../../../shared/components/confirmation-dialog/confirmation-dialog.component';
 import { Course } from '../../model/course';
 import { CoursesService } from '../../services/courses.service';
 
 @Component({
   selector: 'app-courses',
   templateUrl: './courses.component.html',
-  styleUrls: ['./courses.component.scss']
+  styleUrls: ['./courses.component.css']
 })
 export class CoursesComponent implements OnInit {
+
   courses$: Observable<Course[]> | null = null;
 
   constructor(
@@ -28,12 +30,13 @@ export class CoursesComponent implements OnInit {
   }
 
   refresh() {
-    this.courses$ = this.coursesService.list().pipe(
-      catchError(error => {
-        this.onError('Erro ao carregar cursos.');
-        return of([]);
-      })
-    );
+    this.courses$ = this.coursesService.list()
+      .pipe(
+        catchError(error => {
+          this.onError('Erro ao carregar cursos.');
+          return of([])
+        })
+      );
   }
 
   onError(errorMsg: string) {
@@ -42,7 +45,7 @@ export class CoursesComponent implements OnInit {
     });
   }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 
   onAdd() {
     this.router.navigate(['new'], { relativeTo: this.route });
@@ -54,7 +57,7 @@ export class CoursesComponent implements OnInit {
 
   onRemove(course: Course) {
     const dialogRef = this.dialog.open(ConfirmationDialogComponent, {
-      data: 'Tem certeza que deseja remover esse curso?'
+      data: 'Tem certeza que deseja remover esse curso?',
     });
 
     dialogRef.afterClosed().subscribe((result: boolean) => {
@@ -73,4 +76,5 @@ export class CoursesComponent implements OnInit {
       }
     });
   }
+
 }
