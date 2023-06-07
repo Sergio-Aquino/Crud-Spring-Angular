@@ -1,6 +1,12 @@
-# Crud-Spring-Angular
+# Projeto Angular
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.4.
+
+## Pre-requisites
+
+You will need to have the following tools installed in your machine:
+- Node,js (https://nodejs.org)
+- Angular CLI (https://cli.angular.io)
 
 ## Development server
 
