@@ -1,22 +1,22 @@
 # Crud-Spring
-Este é um projeto exemplo que demonstra um CRUD utilizando o Angular no frontend e o Spring Boot no backend.
+This is an example project that demonstrates a CRUD (Create, Read, Update, Delete) operation using Angular on the frontend and Spring Boot on the backend.
 
-## Pré-requisitos
-Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
+## Pre-requisites
+Make sure you have the following tools installed on your machine:
 - Node.js (https://nodejs.org)
 - Angular CLI (https://cli.angular.io)
 - Java Development Kit (JDK) (https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Maven (https://maven.apache.org)
 
-## Configuração do Backend
-1. Faça o clone deste repositório
-2. Navegue até o diretório do projeto: `cd nome-diretório`.
-3. Execute o seguinte comando para iniciar o servidor backend: `mvn spring-boot:run`.
+## Backend configuration
+1. Clone this repository.
+2. Navigate to the project directory: `cd directory-name`.
+3. Run the following command to start the backend server: `mvn spring-boot:run`.
 
-O servidor estaeá em execução em: http://localhost:8080
+The server will be running at: http://localhost:8080
 
-## Uso
-Acesse o aplicativo em seu navegador em (http://localhost:4200) e você poderá realizar operações CRUD em cursos. O frontend se comunicará com o backend para salvar, atualizar, excluir e recuperar cursos.
+## Usage
+Access the application in your browser at (http://localhost:4200), and you will be able to perform CRUD operations on courses. The frontend will communicate with the backend to save, update, delete, and retrieve courses.
 
-## Contribuição
-Se você quiser contribuir para este projeto, sinta-se à vontade para enviar pull requests ou abrir problemas.
+## Contribution
+If you want to contribute to this project, feel free to submit pull requests or open issues.
