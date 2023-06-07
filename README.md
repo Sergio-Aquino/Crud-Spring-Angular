@@ -16,7 +16,7 @@ Make sure you have the following tools installed on your machine:
 The server will be running at: http://localhost:8080
 
 ## Usage
-Access the application in your browser at http://localhost:4200, and you will be able to perform CRUD operations on courses. The frontend will communicate with the backend to save, update, delete, and retrieve courses.
+Access the application in your browser at http://localhost:4200, and you will be able to perform CRUD operations on courses. The frontend will communicate with the backend to save, update, and delete courses.
 
 ## Contribution
 If you want to contribute to this project, feel free to submit pull requests or open issues.
