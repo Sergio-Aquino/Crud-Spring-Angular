@@ -9,7 +9,7 @@
         <version>3.0.5</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.loiane</groupId>
+    <groupId>com.Sergio</groupId>
     <artifactId>crud-spring</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>crud-spring</name>
