@@ -11,7 +11,7 @@ Make sure you have the following tools installed on your machine:
 ## Backend configuration
 1. Clone this repository.
 2. Navigate to the project directory: `cd directory-name`.
-3. Switch to the back-end branch.
+3. Switch to the `back-end` branch.
 4. Run the following command to start the backend server: `mvn spring-boot:run`.
 
 The server will be running at: http://localhost:8080
